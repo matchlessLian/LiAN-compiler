@@ -1,0 +1,43 @@
+Func Lian
+{
+	;none!
+}
+Func Zhen
+{
+	;none!
+}
+Func Qing
+{
+	;none!
+}
+
+Func Main
+{
+	; this is a function!
+	Var a
+	mov a, 				5
+	sub 		a, 2
+	mul 	a, 			3
+	Var   str
+	Mov str, " hello!           "
+}
+
+; 构造一个main函数
+
+Func _Start
+{
+	; 脚本开始从这里执行
+	Var	a
+	Var	b
+label1:
+	Mov	a, 2
+	Mov	b, 4
+	Add	a, b
+	mul a,4
+	mul a,2
+	div a,3
+	Jg 10, a, label1
+
+	Call Main
+}
+
