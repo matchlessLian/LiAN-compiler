@@ -1,0 +1,10 @@
+; 构造一个main函数
+Func _Start
+{
+	; 脚本开始从这里执行
+	Var	a
+	Var	b
+	Mov	a, 2
+	Mov	b, 4
+	Add	a, b
+}
